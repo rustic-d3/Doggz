@@ -1,0 +1,80 @@
+.dog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.dog-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(17, 31, 53, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 520px;
+  border-top: 6px solid #F63049;
+  text-align: center;
+}
+
+.dog-card h1 {
+  color: #111F35;
+}
+
+.dog-card img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 350px;
+}
+
+.dog-fact {
+  font-size: 1rem;
+  color: #8A244B;
+  background: rgba(208, 39, 82, 0.08);
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #F63049;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #F63049, #8A244B);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}

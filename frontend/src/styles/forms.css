@@ -1,0 +1,66 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; 
+}
+
+/* Base form styling */
+form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(17, 31, 53, 0.1); 
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 400px;
+  border-top: 6px solid #F63049; 
+}
+
+
+input {
+  padding: 0.9rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #111F35; 
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #D02752; 
+  box-shadow: 0 0 0 3px rgba(208, 39, 82, 0.1);
+}
+
+button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #F63049, #8A244B);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s, opacity 0.3s;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+input::placeholder {
+  color: #8A244B;
+  opacity: 0.5;
+}
